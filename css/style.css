@@ -494,6 +494,10 @@ body {
         font-size: 45%;
     }
 
+    .second__page--header{
+        justify-content: center;
+    }
+
     .second__page--body{
         flex-direction: column;
     }
