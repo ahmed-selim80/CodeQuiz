@@ -149,10 +149,6 @@ body {
     background-color: var(--color-card);
     padding: 3rem;
     border-radius: 1.6rem;
-    -webkit-border-radius: 1.6rem;
-    -moz-border-radius: 1.6rem;
-    -ms-border-radius: 1.6rem;
-    -o-border-radius: 1.6rem;
     box-shadow: var(--shadow-card);
 }
 
@@ -228,16 +224,100 @@ body {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1000px) {
+/* .card{
+        padding: 1.5rem;
+    }
+
+    .instructions li{
+        margin-left: 1.5rem;
+    }
+
+    .exam-details-header , .instructions-header , .warnings-header{
+        margin-bottom: 5rem;
+    } */
+
+
+    /* 
+    .instructions li , .warnings li{
+        margin-bottom: .2rem;
+        font-size: 1.2rem;
+    } */
+
+
+@media (max-width: 1620px) {
+
+    .second__page {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 1470px) {
+    .second__page {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 1245px) {
+    .second__page {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 1080px) {
     .second__page {
         width: 85vw;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 840px) {
+
+    html{
+        font-size: 55%;
+    }
+
     .second__page {
         width: 90vw;
     }
+}
+
+@media (max-width: 840px) {
+
+    html{
+        font-size: 45%;
+    }
+
+    .second__page {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 610px) {
+
+    html{
+        font-size: 45%;
+    }
+
+    .second__page--body{
+        flex-direction: column;
+    }
+
+    .second__page-warnings{
+        width: 50%;
+        margin: auto;
+    }
+
+    .second__page--footer{
+        width: 50%;
+        margin: auto;
+    }
+
+
 }
 
 .second__page--header{
@@ -322,13 +402,13 @@ body {
 }
 
 .exam-instructions-card , .exam-details-card{
-    min-width: 40rem;
+    width: 50%;
     height: 30rem;
     border: 2px solid rgba(128, 128, 128, 0.229);
 }
 
 .second__page-warnings{
-    width: 100%;
+    /* width: 100%; */
     background-color: rgba(255, 0, 0, 0.11);
     padding: 1.5rem 3rem;
     margin-bottom: 4rem;
@@ -361,7 +441,7 @@ body {
 }
 
 .second__page--footer{
-    width: 100%;
+    /* width: 100%; */
     background: white;
     padding: 1.8rem;
     display: flex;
