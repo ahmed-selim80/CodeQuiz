@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+    >
+    <title>Codequiz</title>
+    <script src="https://kit.fontawesome.com/b155247908.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <section class="first__page">
+
+        <div class="first__page--header">
+            <div class="logo__box">
+                <i class="fas fa-book-open logo"></i>
+            </div>
+            <h2 class="project__name h2--head">CodeQuiz</h2>
+            <p class="grey-p-med">Enter your information to begin</p>
+        </div><!-- first__page--header -->
+
+        
+        <form class="first__page--card card" action="#">
+
+            <div class="card__header">
+                <div><i class="fa-regular fa-user"></i> Start Quiz</div>
+                <p class="grey-p-med">Please fill in all required information to access your exam</p>
+            </div><!-- card__header -->
+
+            <div class="form--inputs">
+
+                <div class="form--input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Please Enter Your Name">
+                </div><!-- form--input -->
+
+                <div class="form--input">
+                    <label>Difficulty</label>
+                    <div class="difficulties">
+                        <div class="difficulty">
+                            <input type="radio" id="easy" name="difficulty" value="easy">
+                            <label for="easy">easy</label>
+                        </div>
+
+                        <div class="difficulty">
+                            <input type="radio" id="medium" name="difficulty" value="medium">
+                            <label for="medium">medium</label>
+                        </div>
+
+                        <div class="difficulty">
+                            <input type="radio" id="hard" name="difficulty" value="hard">
+                            <label for="hard">hard</label>
+                        </div>
+
+                    </div><!-- difficulties -->
+                </div><!-- form--input -->
+
+                <button type="submit" id="start-quiz--btn">Start Quiz</button>
+
+            </div><!-- form--inputs -->
+        </form><!-- first__page--card-form -->
+        
+    </section><!-- first__page -->
+
+
+    
+    <section class="second__page hide">
+
+        <div class="second__page--header">
+            <div class="go-back"><i class="fa-solid fa-arrow-left"></i></div><!-- go-back -->
+            <div class="second__page--header-info">
+                <h2 class="h2--head">Exam Instructions</h2>
+                <p class="grey-p-med">Please read carefully before starting</p>
+            </div><!-- second__page--header-info -->
+        </div><!-- second__page--header -->
+
+        <div class="second__page--body">
+
+            <div class="exam-details-card card">
+                <div class="exam-details-header">
+                    <div><i class="fa-solid fa-book-open"></i></div> <p class="h5--slim">Exam Details</p>
+                </div><!-- exam-details-header -->
+
+                <div class="exam-details-body">
+
+                    <h4 class="h4--med">Computer science fundamentals</h4>
+                    <p class="grey-p-small">Data structures & algorithms</p>
+
+                    <div class="details-info">
+                        <div><i class="fa-regular fa-clock"></i> 90 minutes</div>
+                        <div>25 questions</div>
+                        <div>Auto-graded</div>
+                    </div><!-- details info -->
+
+                    <hr>
+
+                    <h4 class="h4--med exam-schedule">Exam Schedule</h4>
+                    <p class="grey-p-small">10/4/2024, 10:00:00 AM</p>
+
+                </div><!-- exam-details-body -->
+            </div><!-- exam-details-card -->
+
+            <div class="exam-instructions-card card">
+
+                <div class="instructions-header">
+                    <div class="checkmark"><i class="fa-solid fa-clipboard-check"></i></div> <p class="h5--slim">Instructions</p>
+                </div><!-- instructions-header -->
+
+                <ul class="instructions">
+                    <li>Read each question carefully before selecting your answer</li>
+                    <li>You cannot go back to change answers once submitted</li>
+                    <li>The exam will auto-submit when time expires</li>
+                    <li>Switching tabs or leaving the page will log you out automatically</li>
+                    <li>Ensure stable internet connection throughout the exam</li>
+                    <li>Use the navigation panel to move between questions</li>
+                    <li>Flag questions you want to review before submitting</li>
+                </ul><!-- instructions -->
+
+            </div><!-- exam-instructions-card -->
+
+        </div><!-- second__page--body -->
+
+        <div class="second__page-warnings">
+
+            <div class="warnings-header">
+                <div><i class="fa-solid fa-triangle-exclamation"></i></div> <p class="h5--slim warning-p">Important Warnings</p>
+            </div><!-- warnings-header -->
+
+            <ul class="warnings">
+                <li>Do not refresh the browser during the exam</li>
+                <li>Do not use any external resources or assistance</li>
+                <li>Multiple tab switching attempts will result in automatic submission</li>
+                <li>Cheating or malpractice will result in disqualification</li>
+            </ul><!-- warnings -->
+
+        </div><!-- second__page-warnings -->
+
+        <div class="second__page--footer">
+            <div class="second__page--footer-header">
+                <input type="checkbox" id="read-checkbox"> <label for="read-checkbox">I have read and understood all the instructions and warnings above</label>
+            </div><!-- second__page--foter-header -->
+            <button class="classic-btn">Start Exam</button>
+        </div><!-- second__page--footer -->
+
+
+
+    </section><!-- second__page -->
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
