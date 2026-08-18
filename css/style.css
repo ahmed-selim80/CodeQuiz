@@ -229,27 +229,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* .card{
-        padding: 1.5rem;
-    }
-
-    .instructions li{
-        margin-left: 1.5rem;
-    }
-
-    .exam-details-header , .instructions-header , .warnings-header{
-        margin-bottom: 5rem;
-    } */
-
-
-    /* 
-    .instructions li , .warnings li{
-        margin-bottom: .2rem;
-        font-size: 1.2rem;
-    } */
-
-
-
 
 .second__page--header{
     display: flex;
@@ -494,6 +473,10 @@ body {
         font-size: 45%;
     }
 
+    .first__page{
+        width: 75vw;
+    }
+
     .second__page--header{
         margin-top: 2rem;
         justify-content: center;
@@ -525,6 +508,10 @@ body {
 
     html{
         font-size: 40%;
+    }
+    
+    .difficulty {
+        margin-bottom: .4rem;
     }
 
     .second__page--body{
