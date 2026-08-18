@@ -1,11 +1,18 @@
-// first page start
-
+// first page
+const firstPage = document.querySelector('.first__page');
 const quizForm = document.querySelector('.first__page--card');
 const nameInput = document.querySelector('#name');
-const readInstructionsCheckbox = document.querySelector('#read-checkbox');
-const firstPage = document.querySelector('.first__page');
+
+// second page
 const secondPage = document.querySelector('.second__page');
+const backBtn = document.querySelector('.go-back');
+const startExamBtn = document.querySelector('.start-exam-btn');
+const readInstructionsCheckbox = document.querySelector('#read-checkbox');
+
+// third page
 const thirdPage = document.querySelector('.third__page');
+
+// first page start
 
 const user = {};
 
@@ -55,10 +62,6 @@ quizForm.addEventListener('submit', function (e) {
 ////////////////////////////////////////////////////////////////////
 
 // second page start
-
-const backBtn = document.querySelector('.go-back');
-const startExamBtn = document.querySelector('.start-exam-btn');
-
 
 backBtn.addEventListener('click' , function(e){
     e.preventDefault();
