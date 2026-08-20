@@ -117,7 +117,7 @@ startExamBtn.addEventListener('click' , function(e){
     console.log('start exam')
 
     // switching the pages
-    // secondPage.classList.toggle('hide');
+    secondPage.classList.toggle('hide');
     thirdPage.classList.toggle('hide');
 })
 
